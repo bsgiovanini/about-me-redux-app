@@ -1,25 +1,17 @@
-import React, { Component } from 'react';
-import './styles/index.scss';
-import Header from './components/layout/Header';
-import Sidebar from './components/layout/Sidebar';
-import Home from './components/Home';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import * as actionCreators from './actions/layout';
 
+import Main from './Main'
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        
-        <div className="wrap">
-          <Header />
-          <div className="container content">
-            <Home/>
-          </div>
-        </div>
-        <label className="sidebar-toggle"></label>
-      </div>
-    );
-  }
+function mapStateToProps(state) {
+  return {
+    layout : state.layout
+  };
 }
 
-export default App;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(actionCreators ,dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Main);
