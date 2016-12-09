@@ -1,6 +1,64 @@
-@import 'base.scss';
-@import 'portfolio.scss';
-@import 'about.scss';
-@import 'services.scss';
-@import 'layout.scss';
-@import 'custom.scss';
+@import './bootstrap-custom';
+
+body {
+	height: 100%;
+}
+
+.mainContent {	
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+
+.navbar {
+	margin: 15px;
+}
+
+.jumbotron {
+	width: 100%;
+	height: 100vh;
+	padding-top: 5px;
+	position: relative;
+}
+
+.persona {
+	position: absolute;
+	bottom: 100px;
+	color: white;
+	margin-left: 25px;
+}
+
+.dictation {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: white;
+}
+
+
+
+@media (min-width: 992px) {   
+	.jumbotron-bg-lg {
+		background: url('./assets/typography_1920x1080.jpg');
+		background-size: 100% 100%;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.jumbotron-bg-md {
+		background: url('./assets/typography_1024x768.jpg');
+		background-size: 100% 100%;
+	}
+}
+
+/* Small Devices, Tablets */
+@media (max-width: 767px) {
+	.jumbotron-bg-sm {
+		background: url('./assets/typography_700x525.jpg');
+		background-size: 100% 100%;
+	}
+}
+
+
+

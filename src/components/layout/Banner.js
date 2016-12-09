@@ -5,9 +5,9 @@ class Banner extends Component {
   render() {
 
     return (
-	    <div className="contact-banner">
+	    <footer className="contact-banner">
       		<p>Contact me at <em>bsgiovanini(at)gmail.com</em> or call <em>07919 411 405</em></p>
-      	</div>
+      	</footer>
     );
   }
 }

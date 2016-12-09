@@ -8,19 +8,19 @@ class Home extends Component {
 
     return (
 
-      	<div className="posts">
+      	<section className="posts">
   
-  			<div className="post banner">
+  			<section className="post banner">
 			    <h1 className="post-title">I build <em>scalable</em>, <em>maintainable</em> and <em>secure</em> enterprise web applications.</h1>
     			<p>for <em>agencies</em>, <em>bluechips</em>, <em>start-ups</em> and sometimes, <em>myself</em>. <a href="#"> Find out More</a></p>
 
-			</div>
+			</section>
   
-		  	<div className="post clearfix">
+		  	<section className="post clearfix">
 
 				<h2>Technologies I build with:</h2>
 
-				<div className="skill-item clearfix">
+				<article className="skill-item clearfix">
 					<h4>Client Side JS</h4>
 					<ul className="">
 						<li><em>Backbone</em></li>
@@ -32,10 +32,10 @@ class Home extends Component {
 						</li>
 						<li><em>D3</em></li>
 					</ul>
-				</div>
+				</article>
 
 
-				<div className="skill-item clearfix">
+				<article className="skill-item clearfix">
 					<h4>Server Side JS</h4>
 					<ul>
 						<li><em>MongoDB</em></li>
@@ -46,9 +46,9 @@ class Home extends Component {
 							</ul>
 						</li>
 					</ul>
-				</div>
+				</article>
 
-				<div className="skill-item clearfix">
+				<article className="skill-item clearfix">
 					<h4>Testing</h4>
 					<ul>
 						<li><em>Jasmine</em></li>
@@ -56,9 +56,9 @@ class Home extends Component {
 						<li><em>Protractor</em></li>
 						<li><em>Jest</em></li>
 					</ul>
-				</div>
+				</article>
 
-				<div className="skill-item clearfix">
+				<article className="skill-item clearfix">
 					<h4>Deployment</h4>
 					<ul className="clearfix">
 						<li><em><b>*</b>Nginx</em></li>
@@ -66,35 +66,35 @@ class Home extends Component {
 						<li><em>Gulp</em></li>
 						<li><em>Grunt</em></li>
 					</ul>
-				</div>
+				</article>
 
 				<div className="exclaimation">
-					<em><b>*</b> This site is built with these technologies. View the <a href="https://github.com/caljrimmer/portfolio-redux-app">github repo here</a>.</em><br/>
+					<em><b>*</b> This site is built with these technologies. View the <a href="https://github.com/bsgiovanini/portfolio-redux-app">github repo here</a>.</em><br/>
 					<em><b>**</b> Yep, I know React can be used on the server side too. This site is Isomorphical rendered.</em>
 				</div>
 
-  			</div>
+  			</section>
 
 
-  			<div className="post clearfix">
+  			<section className="post clearfix">
 
 				<h2>Companies I have worked with:</h2>
 
 				<ul className="clients">
-					<li className="goldmans-logo">Goldman Sachs</li>
-					<li className="orange-logo">Orange</li>
-					<li className="tesco-logo">Tesco</li>
+					<li className="goldmans-logo">Petrobras</li>
+					<li className="orange-logo">Concrete Solutions</li>
+					<li className="tesco-logo">Anc</li>
 					<li className="timeout-logo">Timeout</li>
 					<li className="wiley-logo">John Wiley and Sons</li>
 					<li className="covestor-logo">Covestor</li>
 					<li className="shipserv-logo">Shipserv</li>
 				</ul>
 
-			</div>
+			</section>
 
 			<Banner />
 
-  		</div>
+  		</section>
   
     );
   }

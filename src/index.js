@@ -6,6 +6,11 @@ import {Router, Route, browserHistory} from 'react-router';
 import store from './store';
 import {Provider} from 'react-redux';
 
+import 'jquery';
+
+// import bootstrap
+import 'bootstrap-sass/assets/javascripts/bootstrap.js';
+
 ReactDOM.render(
 	<Provider store={store}>
 		<Router history={browserHistory}>
