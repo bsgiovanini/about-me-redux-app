@@ -1,7 +1,20 @@
 @import './bootstrap-custom';
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.glyphicon, .fa {
+	margin-right: 7px;
 }
 
 .mainContent {	
@@ -10,32 +23,34 @@ body {
 	height: 100%;
 }
 
-.navbar {
-	margin: 15px;
-}
 
 .jumbotron {
 	width: 100%;
 	height: 100vh;
-	padding-top: 5px;
+	padding-top: 0px;
 	position: relative;
 }
 
 .persona {
 	position: absolute;
 	bottom: 100px;
-	color: white;
+	color: #f4ffaf;
 	margin-left: 25px;
+	text-shadow: 4px 0 0 #000, -4px 0 0 #000, 0 4px 0 #000, 0 -4px 0 #000, 4px 4px #000, -4px -4px 0 #000, 4px -4px 0 #000, -1px 1px 0 #000;
 }
 
 .dictation {
 	position: absolute;
-	right: 0;
-	bottom: 0;
-	color: white;
+	right: 10px;
+	bottom: 10px;
+	color: #f4ffaf;
+	text-shadow: 4px 0 0 #000, -4px 0 0 #000, 0 4px 0 #000, 0 -4px 0 #000, 4px 4px #000, -4px -4px 0 #000, 4px -4px 0 #000, -1px 1px 0 #000;
 }
 
-
+.pic {
+	display: block;
+	margin: 0 auto;
+}
 
 @media (min-width: 992px) {   
 	.jumbotron-bg-lg {
@@ -53,9 +68,16 @@ body {
 }
 
 /* Small Devices, Tablets */
-@media (max-width: 767px) {
+@media (min-width: 416px) and (max-width: 767px) {
 	.jumbotron-bg-sm {
 		background: url('./assets/typography_700x525.jpg');
+		background-size: 100% 100%;
+	}
+}
+
+@media (max-width: 415px) {
+	.jumbotron-bg-xs {
+		background: url('./assets/typography_400x700.jpg');
 		background-size: 100% 100%;
 	}
 }
