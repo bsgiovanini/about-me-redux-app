@@ -25,7 +25,7 @@ class Header extends Component {
 			        <li><a href="#"><span className="glyphicon glyphicon-cd" aria-hidden="true"></span><span className="hidden-sm">Who I Worked With</span></a></li>
 			        <li><a href="#"><span className="glyphicon glyphicon-education" aria-hidden="true"></span><span className="hidden-sm">My Education</span></a></li>
 			        <li><a href="#"><span className="fa fa-linkedin-square fa-lg" aria-hidden="true"></span><span className="hidden-sm">My Linkedin</span></a></li>
-			        <li><a href="#"><span className="glyphicon glyphicon-cloud" aria-hidden="true"></span><span className="hidden-sm">Repositories</span></a></li>
+			        <li><a href="#"><span className="glyphicon glyphicon-cloud" aria-hidden="true"></span><span className="hidden-sm">Portfolio</span></a></li>
 			      </ul>
 			      <ul className="nav navbar-nav navbar-right">
 			        <li><a href="#"><span className="glyphicon glyphicon-envelope" aria-hidden="true"></span><span className="hidden-sm">Contact</span></a></li>
@@ -39,6 +39,7 @@ class Header extends Component {
 				<h4>Based in Rio de Janeiro - Brazil</h4>
 			</div>
 			<h4 className="dictation">"There is no personal growth, no change in your life if you never try"</h4>
+			<h6 className="dictation author">Theodore Roosevelt</h6>
 		</header>
 		
 
