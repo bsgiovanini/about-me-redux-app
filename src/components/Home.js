@@ -2,10 +2,151 @@ import React, { Component } from 'react';
 import Banner from './layout/Banner';
 import ReactHighcharts from 'react-highcharts';
 import Highcharts from 'highcharts';
+import Heatmap from 'highcharts-heatmap';
+import Treemap from 'highcharts-treemap';
+
 
 class Home extends Component {
 
+	getDrillDownData () {
+		var data = {
+            'Front End Development': {
+                'Javascript': {
+                    'React.js': '49.3',
+                    'Redux': '50.0',
+                    'Dojo Toolkit': '50.1',
+                    'Vanilla Javascript': '50.4',
+                    'JQuery': '60.3',
+                    'Highcharts': '45.3',
+                    'Jasmine': '40'
+                },
+                'CSS3': {
+                	'Sass': '49.3',
+                    'Bootstrap 3': '50.1',
+                    'Media Queries': '50.4'                 
+                },
+                'HTML5': {
+                	'Tags': '50.0',
+                	'API': '50.0'
+                }
+
+            },
+            'Back End Development': {
+                'Javascript': {
+                    'Express.js': '116.8',
+                    'Isomorphical': '100.0'
+                },
+                'JVM':{
+                	'Groovy and Grails': '100',
+                	'JAVA 5': '50'
+                },
+                'C#': {
+                	'MVC5': '70',
+                	'NUnit': '30'
+                },  
+                'Ruby': {
+                	'Rails 5': '100'
+                },
+                'DataBase': {
+                	'Oracle': '50',
+                	'Hibernate': '50'
+                }
+            }
+        },
+        points = [],
+        techP,
+        techVal,
+        techI = 0,
+        technologyP,
+        technologyI,
+        causeP,
+        causeI,
+        tech,
+        technology,
+        cause;
+
+	    for (tech in data) {
+	        if (data.hasOwnProperty(tech)) {
+	            techVal = 0;
+	            techP = {
+	                id: 'id_' + techI,
+	                name: tech,
+	                color: Highcharts.getOptions().colors[techI]
+	            };
+	            technologyI = 0;
+	            for (technology in data[tech]) {
+	                if (data[tech].hasOwnProperty(technology)) {
+	                    technologyP = {
+	                        id: techP.id + '_' + technologyI,
+	                        name: technology,
+	                        parent: techP.id
+	                    };
+	                    points.push(technologyP);
+	                    causeI = 0;
+	                    for (cause in data[tech][technology]) {
+	                        if (data[tech][technology].hasOwnProperty(cause)) {
+	                            causeP = {
+	                                id: technologyP.id + '_' + causeI,
+	                                name: cause,
+	                                parent: technologyP.id,
+	                                value: Math.round(+data[tech][technology][cause])
+	                            };
+	                            techVal += causeP.value;
+	                            points.push(causeP);
+	                            causeI = causeI + 1;
+	                        }
+	                    }
+	                    technologyI = technologyI + 1;
+	                }
+	            }
+	            techP.value = Math.round(techVal / technologyI);
+	            points.push(techP);
+	            techI = techI + 1;
+	        }
+	    }
+	    return {
+	        series: [{
+	            type: 'treemap',
+	            layoutAlgorithm: 'squarified',
+	            allowDrillToNode: true,
+	            animationLimit: 1000,
+	            dataLabels: {
+	                enabled: false
+
+	            },
+
+	            levelIsConstant: false,
+	            tooltip : {
+	            	useHTML: true,
+	            	pointFormat: '<b>{point.name}</b>',
+	            },
+	            
+	            levels: [{
+	                level: 1,
+	                dataLabels: {
+	                    enabled: true,
+	                    style: {
+	                    	'fontSize': "20px"
+	                    }
+
+	                },
+	                borderWidth: 4,
+	                borderColor: "#000000",
+
+	    
+	            }],
+	            data: points
+	        }],
+	        title: {
+	            text: ''
+	        }
+	    };
+
+	}
+
+
   getHighChartsData() {
+
 
     var colors = Highcharts.getOptions().colors,
         categories = ['Siplex','Reservoir Vigilance', 'Concrete Solutions'],
@@ -122,19 +263,26 @@ class Home extends Component {
 
   render() {
 
+  	console.log(Highcharts, Heatmap, Treemap);
+
+	Heatmap(Highcharts);
+	Treemap(Highcharts);	
+
+	this.getDrillDownData();
+
     return (
 
       	<section className="posts">
   
-  			<div id="who-i-am" className="row">
+  			<div id="about-me" className="row">
 
 
   				<div className="col-xs-12 title">	
-  					<h1>Welcome to my World!</h1>
+  					<h1 className="section">About Me</h1>
   				</div>
 
   				<div className="col-xs-12">	
-  					<img src="me.jpg" className="img-responsive img-circle pic" alt="Me" width="200" height="200" />
+  					<img src="me.png" className="img-responsive img-circle pic" alt="Me" width="200" height="200" />
   				</div>
   				
   				<div className="col-xs-12">
@@ -146,62 +294,21 @@ class Home extends Component {
   
 		  	<div id="skills" className="row">
 		  		<div className="col-xs-12">
-  					<h1>Technologies I build with:</h1>
+  					<h1 className="section">Skills</h1>
   				</div>
 		  	</div>
 		  	<div className="row">		
-		  		<div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-		  			<h4>Client Side JS</h4>
-					<ul>
-						<li><em>Backbone</em></li>
-						<li><em><b>*</b><b>*</b>React</em>
-							<ul>
-								<li><em><b>*</b>Redux</em></li>
-								<li><em>Flux</em></li>
-							</ul>
-						</li>
-						<li>Elm</li>
-						
-					</ul>
-		  		</div>
-		  		<div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-		  			<h4>Server Side JS</h4>
-					<ul>
-						<li><em>MongoDB</em></li>
-						<li><em><b>*</b>Node</em>
-							<ul>
-								<li><em><b>*</b>Express</em></li>
-								<li><em>Hapi</em></li>
-							</ul>
-						</li>
-					</ul>
-		  		</div>
-
-		  		<div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-		  			<h4>Deployment</h4>
-					<ul>
-						<li><em><b>*</b>Nginx</em></li>
-						<li><em><b>*</b>Webpack</em></li>
-						<li><em>Gulp</em></li>
-						<li><em>Grunt</em></li>
-					</ul>
-		  		</div>
-
-		  		<div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-		  			<h4>Testing</h4>
-					<ul>
-						<li><em>Jasmine</em></li>
-						<li><em>Karma</em></li>
-						<li><em>Protractor</em></li>
-						<li><em>Jest</em></li>
-					</ul>
+		  		
+		  		<div className="col-xs-12">
+		  			<ReactHighcharts config={this.getDrillDownData()}></ReactHighcharts>
 		  		</div>
 
 		  		
 
 				<div className="col-xs-12">
-					<em><b>*</b> This site is built with these technologies. View the <a href="https://github.com/bsgiovanini/about-me-redux-app" target="_blank">github repo here</a>.</em><br/>
-					<em><b>**</b> Yep, I know React can be used on the server side too. This site is Isomorphical rendered.</em>
+					<p> This site is built with <img src="react.png" width="120" height="35" class="tech-logo img-responsive" alt="React.js"></img> and 
+					<img src="redux.png" width="120" height="30" class="tech-logo img-responsive" alt="Redux"></img> and lives in <em>CDN Netlify</em>. View the <a href="https://github.com/bsgiovanini/about-me-redux-app" target="_blank">github repo here</a>.</p>
+					
 				</div>
 
   			</div>
@@ -209,10 +316,10 @@ class Home extends Component {
   			
 
 
-  			<div className="row">
+  			<div id="companies" className="row">
 
   				<div className="col-xs-12">
-  					<h1>Companies I have worked with:</h1>
+  					<h1 className="section">Companies I have worked with</h1>
   				</div>
   				<div className="col-xs-12">
   					<ul className="clients">
@@ -233,7 +340,7 @@ class Home extends Component {
   				</div>
   			</div>
 
-			<div className="row with-background">
+			<div id="contact" className="row with-background">
 				<div className="col-xs-12">
 					<h1>Contact</h1>
 				</div>

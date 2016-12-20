@@ -52,6 +52,8 @@
     "bootstrap-sass": "^3.3.7",
     "classnames": "^2.2.5",
     "highcharts": "^5.0.6",
+    "highcharts-heatmap": "^0.1.2",
+    "highcharts-treemap": "^0.1.2",
     "jquery": "^3.1.1",
     "node-sass": "^3.13.0",
     "react": "^15.4.1",
