@@ -41,7 +41,7 @@ class Home extends Component {
                 	'JAVA 5': '50'
                 },
                 'C#': {
-                	'MVC5': '70',
+                	'MVC5': '100',
                 	'NUnit': '30'
                 },  
                 'Ruby': {
@@ -322,7 +322,7 @@ class Home extends Component {
   					<h1 className="section">Companies I have worked with</h1>
   				</div>
   				<div className="col-xs-12">
-  					<ul className="clients">
+  					<ul className="companies">
 						<div className="col-lg-6 col-sm-12">
 							<a href="http://www.petrobras.com.br" target="_blank"><img src="Logo_petrobras.gif" className="img-responsive pic" alt="Petrobras" width="150" height="100" /></a>
 						</div>
