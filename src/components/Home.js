@@ -33,8 +33,8 @@ class Home extends Component {
             },
             'Back End Development': {
                 'Javascript': {
-                    'Express.js': '116.8',
-                    'Isomorphical': '100.0'
+                    'Express.js': '50.8',
+                    'Isomorphical': '50.0'
                 },
                 'JVM':{
                 	'Groovy and Grails': '100',
@@ -51,7 +51,15 @@ class Home extends Component {
                 	'Oracle': '50',
                 	'Hibernate': '50'
                 }
-            }
+            },
+            'Miscelaneous': {
+            	'Tools': {
+            		'Jenkins': '20',
+            		'Docker': '20',
+            		'Git': '20',
+            		'CDN': '20'
+            	}
+            } 
         },
         points = [],
         techP,
@@ -138,7 +146,7 @@ class Home extends Component {
 	            data: points
 	        }],
 	        title: {
-	            text: ''
+	            text: 'Tech Drilldown Chart'
 	        }
 	    };
 
@@ -306,38 +314,166 @@ class Home extends Component {
 		  		
 
 				<div className="col-xs-12">
-					<p> This site is built with <img src="react.png" width="120" height="35" class="tech-logo img-responsive" alt="React.js"></img> and 
-					<img src="redux.png" width="120" height="30" class="tech-logo img-responsive" alt="Redux"></img> and lives in <em>CDN Netlify</em>. View the <a href="https://github.com/bsgiovanini/about-me-redux-app" target="_blank">github repo here</a>.</p>
+					<p> This site is built with <img src="react.png" width="120" height="35" className="tech-logo img-responsive" alt="React.js"></img> and 
+					<img src="redux.png" width="120" height="30" className="tech-logo img-responsive" alt="Redux"></img> and lives in <em>CDN Netlify</em>. View the <a href="https://github.com/bsgiovanini/about-me-redux-app" target="_blank">github repo here</a>.</p>
 					
 				</div>
 
   			</div>
 
-  			
-
-
-  			<div id="companies" className="row">
-
-  				<div className="col-xs-12">
+			<div id="companies" className="row">
+				<div className="col-xs-12">
   					<h1 className="section">Companies I have worked with</h1>
   				</div>
-  				<div className="col-xs-12">
-  					<ul className="companies">
-						<div className="col-lg-6 col-sm-12">
-							<a href="http://www.petrobras.com.br" target="_blank"><img src="Logo_petrobras.gif" className="img-responsive pic" alt="Petrobras" width="150" height="100" /></a>
-						</div>
 
-						<div className="col-lg-6 col-sm-12">
-							<a href="http://www.concretesolutions.com.br" target="_blank"><img src="Logo_ConcreteSolutions.png" className="img-responsive pic" alt="Concrete Solutions" width="150" height="100" /></a>
+  				<div className="col-xs-12 ketmain">
+	
+					<ul className="kettimeline">
+					 
+					 <li className="timelineunit">
+						<input className="ketradio" id="unit8" name="units" type="radio" />
+						<div className="meta">
+						  <label className="title" htmlFor="unit8">This is our item number 3 in 2014.</label>
+						  <span className="ketdate">18 Jan 2014</span>
+						  <a href="#" className="hint--top" data-hint="Job Position">
+						  	<label className="ketcircle" htmlFor="unit8" >
+						  		<img src="petrobras.png"  />
+						    </label>
+						  </a>
 						</div>
+						<div className="ketcontent">
+						  <p>
+							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat. 
+						  </p>
+						</div>
+					  </li>
+					  
+					 <li className="timelineunit">
+						<input className="ketradio" id="unit7" name="units" type="radio"  />
+						<div className="meta">
+						  <label className="title" htmlFor="unit7">Click here to expand the content box.</label>
+						  <span className="ketdate">15 Jan 2014</span>
+						  <a href="#" className="hint--top" data-hint="Marya Maham">
+						  <label className="ketcircle" htmlFor="unit7">
+						  	<img src="face2.jpg"/>
+						  </label>
+						  </a>
+						</div>
+						<div className="ketcontent">
+						  <p>
+							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						  </p>
+						</div>
+					  </li>
+
+					  
+					  <li className="timelineunit">
+						<input className="ketradio" id="unit6" name="units" type="radio"  />
+						<div className="meta">
+						  <label className="title" htmlFor="unit6">You can also click on avatar to expand the content box.</label>
+						  <span className="ketdate">10 Jan 2014</span>
+						  <a href="#" className="hint--top" data-hint="Yellow Follower">
+						  <label className="ketcircle" htmlFor="unit6">
+						  	<img src="face3.jpg" />
+						  </label>
+						  </a>
+						</div>
+						<div className="ketcontent">
+						  <p>
+							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						  </p>
+						</div>
+					  </li>
+					  
+					  <li className="timelineunit">
+						<input className="ketradio" id="unit5" name="units" type="radio"  />
+						<div className="meta">
+						  <label className="title" htmlFor="unit5">Mouse over the avatar to see effect and tooptip</label>
+						  <span className="ketdate">8 Jan 2014</span>
+						  <a href="#" className="hint--top" data-hint="Saparo">
+						  <label className="ketcircle" htmlFor="unit5">
+						  	<img src="face4.jpg"  />
+						  </label>
+						  </a>
+						</div>
+						<div className="ketcontent">
+						  <p>
+							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						  </p>
+						</div>
+					  </li>
+					  
+					  <li className="timelineunit">
+						<input className="ketradio" id="unit4" name="units" type="radio" />
+						<div className="meta">
+						  <label className="title" htmlFor="unit4">You can easily add more timeline.</label>
+						  <span className="ketdate">7 Jan 2014</span>
+						  <a href="#" className="hint--top" data-hint="Melissa">
+						  <label className="ketcircle" htmlFor="unit4">
+						  	<img src="face5.jpg" />
+						  </label>
+						  </a>
+						</div>
+						<div className="ketcontent">
+						  <p>
+							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						  </p>
+						</div>
+					  </li>
+					  <li className="timelineunit">
+						<input className="ketradio" id="unit3" name="units" type="radio" />
+						<div className="meta">
+						  <label className="title" htmlFor="unit3">Is this look awesome ??</label>
+						  <span className="ketdate">4 Jan 2014</span>
+						  <a href="#" className="hint--top" data-hint="White Folower">
+						  <label className="ketcircle" htmlFor="unit3">
+						  	<img src="face6.jpg"  />
+						  </label>
+						  </a>
+						</div>
+						<div className="ketcontent">
+						  <p>
+							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						  </p>
+						</div>
+					  </li>
+					  <li className="timelineunit">
+						<input className="ketradio" id="unit2" name="units" type="radio" />
+						<div className="meta">
+						  <label className="title" htmlFor="unit2">Add timeline into your website to make it attractive look.</label>
+						  <span className="ketdate">3 Jan 2014</span>
+						  <a href="#" className="hint--top" data-hint="Friends">
+						  <label className="ketcircle" htmlFor="unit2">
+						  	<img src="face7.jpg"  />
+						  </label>
+						  </a>
+						</div>
+						<div className="ketcontent">
+						  <p>
+							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						  </p>
+						</div>
+					  </li>
+					  <li className="timelineunit">
+						<input className="ketradio" id="unit1" name="units" type="radio" />
+						<div className="meta">
+						  <label className="title" htmlFor="unit1">if you like it please don't forget to rate it.</label>
+						  <span className="ketdate">01 Jan 2014</span>
+						 <a href="#" className="hint--top" data-hint="Horse">   
+						 <label className="ketcircle" htmlFor="unit1">
+						  	<img src="face8.jpg" />
+						  </label>
+						 </a>  
+						</div>
+						<div className="ketcontent">
+						  <p>
+							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						  </p>
+						</div>
+					  </li>
 					</ul>
-  				</div>
-			</div>
-
-			<div className="row">
-  				<div className="col-xs-12">
-  					<ReactHighcharts config={this.getHighChartsData()}></ReactHighcharts>
-  				</div>
+				
+				</div>
   			</div>
 
 			<div id="contact" className="row with-background">

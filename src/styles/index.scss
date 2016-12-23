@@ -8,7 +8,6 @@ body {
 	height: 100%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
-	text-align: center;
 }
 
 .navbar {
@@ -71,10 +70,10 @@ body {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-15px);
   }
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-5px);
   }
 }
 
@@ -99,6 +98,10 @@ h1 {
 	text-align: center;
 	margin: 40px 0;
 	text-transform: uppercase;
+}
+
+h1, h2, h4, p {
+	text-align: center;
 }	
 	
 
@@ -131,6 +134,10 @@ ul.companies {
 	margin: 20px auto;
 }
 
+.tech-logo {
+	display: inline;
+}
+
 .with-background {
 	background-image: url('./assets/fundo2.png');
 	background-repeat: repeat;
@@ -143,6 +150,7 @@ ul.companies {
 
 .list-inline {
 	margin: 40px;
+	text-align: center;
 }
 
 .list-inline li {
@@ -164,6 +172,307 @@ ul.companies {
 .list-inline .social-google-plus i {
 	color: #DB4A37;
 }
+
+/*timeline*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/*Tooltip */
+.hint--top:before {
+  margin-bottom: -30px;
+    margin-left: -39px;
+	 }
+.hint--top:after {
+  margin-bottom: -18px;
+  margin-left: -59px;
+}
+.hint--top:before, .hint--top:after {
+  bottom: 100%;
+  left: 42%; }
+.hint--top:hover:after, .hint--top:hover:before, .hint--top:focus:after, .hint--top:focus:before {
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  transform: translateY(-8px); }
+  
+  .hint, [data-hint] {
+  position: relative;
+  display: inline-block;
+  }
+   
+  .hint:before, .hint:after, [data-hint]:before, [data-hint]:after {
+    position: absolute;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000000;
+    pointer-events: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease; }
+  .hint:hover:before, .hint:hover:after, .hint:focus:before, .hint:focus:after, [data-hint]:hover:before, [data-hint]:hover:after, [data-hint]:focus:before, [data-hint]:focus:after {
+    visibility: visible;
+    opacity: 1; }
+  .hint:before, [data-hint]:before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border: 6px solid transparent;
+    z-index: 1000001; }
+  .hint:after, [data-hint]:after {
+    content: attr(data-hint);
+    background: #000000;
+    color: white;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    }
+
+
+/*color for tooltip arrows*/
+
+.hint--top:before {
+  border-top-color: #000000; }
+  
+   
+/* ------------- KET Timeline ------------------------*/
+ 
+.ketmain{
+	font-family: 'Lato',Arial,sans-serif;
+	padding-left: 100px;
+    padding-right: 100px;
+}
+ 
+.kettimeline {
+  list-style: none;
+  margin: 50px 0 30px 120px;
+  padding-left: 30px;
+  border-left: 6px solid #000000;
+}
+
+.kettimeline li {
+  position: relative;	
+  margin: 70px 0;
+}
+
+.kettimeline p {
+  margin: 0 0 15px;
+}
+
+
+.ketdate {
+    font-size: 14px;
+	font-weight:bold;
+    left: -175px;
+    position: absolute;
+    top: 72%;
+}
+.ketmain .ketradio:checked + .meta span.ketdate{
+	margin-top: -38px;	
+}
+
+.ketcircle {
+	
+	border-radius: 50%;
+	display: block;
+	height: 70px;
+	left: -69px;
+	margin-top: 25px;
+	position: absolute;
+	top: 50%;
+	width: 70px;
+}
+.ketcircle img{
+	border: 5px solid #ececec;
+	cursor:pointer;
+	border-radius: 50%;
+}
+  
+.ketcircle img:hover{
+    transform:scale(1.2);
+    -ms-transform:scale(1.2); /* IE 9 */
+    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2); /* Opera */
+   -webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.ketcontent {
+  max-height: 20px;
+  padding: 20px 20px 0;
+  border-color: transparent;
+  position: relative;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.4em;
+}
+.ketcontent:before, .ketcontent:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  right: 100%;
+}
+.ketcontent:before {
+  border-width: 15px;
+  border-right-color: inherit;
+  top: 50%;
+  margin-top: -15px;
+}
+.ketcontent:after {
+  border-width: 17px;
+  top: 50%;
+  margin-top: -17px;
+}
+.ketcontent p {
+  color: transparent;
+  font-size:14px;
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
+  line-height:20px;
+}
+
+.ketmain label.title {
+  font-size: 22px;
+  font-weight:bold;
+  color:#000;
+  transition: transform 0.3s linear;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 45px;
+  margin-left:40px;
+}
+
+.ketmain .ketradio:checked + .meta label.title{
+	margin-top: 0px;
+}
+
+.ketmain .ketradio {
+  display: none;
+}
+
+.ketmain .ketradio:checked + .meta label.title {
+	display: none;
+  color:#FFFFFF;
+  cursor: auto;
+  transform: translate(18px, -20px);
+}
+
+.ketmain .ketradio:checked + .meta .circle {
+  background: #f98262;
+}
+.ketmain .ketradio:checked ~ .ketcontent {
+  max-height: 300px;
+  border-color: #000;
+  background: #f4ffaf;
+  margin-right: 25px;
+  margin-left:25px;
+  transform: translateX(20px);
+  transition: max-height 0.3s linear, border-color 0.5s linear, transform 0.2s linear;
+}
+.ketmain .ketradio:checked ~ .ketcontent p {
+  max-height: 200px;
+  color: #000;
+  transition: color 0.3s linear 0.3s;
+}
+
+/* Reponsive CSS - Vertical Display */
+
+@media screen and (max-width: 767px) {
+  
+  .ketmain{
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+  .ketmain .ketradio:checked + .meta label.title {
+    color: #FFFFFF;
+    cursor: auto;
+    transform: translate(45px, 20px);
+  }
+	
+  .kettimeline {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  .kettimeline li {
+    margin: 50px 0;
+  }
+	.ketmain .ketradio:checked + .meta label.title {
+		margin-top: -15px;
+	}
+  .ketmain label.title {
+    width: 66%;
+    font-size: 14px;
+    white-space: nowrap;
+    display: block;
+    transform: translateX(18px);
+	text-overflow: ellipsis;
+    overflow: hidden;
+	margin-left:18px;
+	top:28px;
+  }
+
+  .ketcontent {
+    padding-top: 45px;
+    border-color: #000;
+  }
+  .ketcontent:before, .ketcontent:after {
+    border: solid transparent;
+    bottom: 100%;
+  }
+  .ketcontent:before {
+    border-bottom-color: inherit;
+    border-width: 15px;
+    top: -16px;
+    left: 50px;
+    margin-left: -17px;
+  }
+  .ketcontent:after {
+    border-width: 20px;
+    top: -24px;
+    left: 50px;
+    margin-left: -20px;
+  }
+  .ketmain .ketradio:checked ~ .ketcontent{
+  	
+  	max-height: 350px;
+    padding-top: 20px; 
+	overflow:auto;
+  }
+  .ketmain .ketradio:checked ~ .ketcontent p{
+  	height:auto;
+  }
+  .ketcontent p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .ketcircle{
+    display: none;
+  }
+
+  .ketdate {
+	    font-size: 14px;
+		font-weight:bold;
+	    left: 2px;
+	    position: absolute;
+	    top: -10px;
+	}
+}
+
+
+/*timeline*/
  
 @media (min-width: 992px) {   
 	.jumbotron-bg-lg {
