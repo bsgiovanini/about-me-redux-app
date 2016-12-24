@@ -45,7 +45,7 @@ class Home extends Component {
                 	'NUnit': '30'
                 },  
                 'Ruby': {
-                	'Rails 5': '100'
+                	'Rails': '100'
                 },
                 'DataBase': {
                 	'Oracle': '50',
@@ -302,7 +302,7 @@ class Home extends Component {
   				
   				<div className="col-xs-12">
   					<p>Brazilian guy who <em>believes</em> that <em>knowledge</em> has <em>no limit</em>. Ambitious, tenacious, and well-accomplished IT professional working essentially as Full stack developer in the past 10 years. I build <em>scalable</em>, <em>maintainable</em> and <em>secure</em> enterprise web applications. </p>
-  					<p>Nowadays, I've been specializing in Javascript and related Front End Frameworks. Moreover, I have a passion for computational intelligence and Drones applications. My knowledge includes Web Development technologies such as Javascript, CSS, HTML5, Java, C#, Grails, Agile Methodologies, Unit Testing. Besides, I have knowledge in UAV's with experience in Python, C++, UAVs and Artificial Intelligence algorithms.</p>
+  					<p>Nowadays, I've been specializing in Javascript and related Front End Frameworks. Moreover, I have a passion for computational intelligence and Drones applications. My knowledge includes Web Development technologies such as Javascript, CSS, HTML5, Java, C#, Grails, Agile Methodologies, Unit Testing. Besides, I have knowledge in UAV's with experience in Python, C++ and Artificial Intelligence algorithms.</p>
   				</div>
 			    
 			</div>
@@ -348,7 +348,7 @@ class Home extends Component {
 						    </label>
 						  </a>
 						</div>
-						<div className="ketcontent">
+						<div className="ketcontent job-position-hint">
 						  <p>
 						  	<b>Petrobras - Siplex System - Brazil</b><br></br>
 							Evaluation of oil and field exploration opportunities. <br></br>
@@ -370,7 +370,7 @@ class Home extends Component {
 						  </label>
 						  </a>
 						</div>
-						<div className="ketcontent">
+						<div className="ketcontent education-hint">
 						  <p>
 						  	<b>Military Engineering Institute - Brazil</b><br></br>
 						  	Subject: "A collision avoidance approach assisting remotely operated quadrotors"<br></br>
@@ -391,7 +391,7 @@ class Home extends Component {
 						  </label>
 						  </a>
 						</div>
-						<div className="ketcontent">
+						<div className="ketcontent education-hint">
 						  <p>
 						     <b>Pontificial Catholic University - Brazil</b><br></br>
 							 Subject: "Genetic programming applied on reservoir history adjustment study"
@@ -410,7 +410,7 @@ class Home extends Component {
 						  </label>
 						  </a>
 						</div>
-						<div className="ketcontent">
+						<div className="ketcontent job-position-hint">
 						  <p>
 						  	<b>Petrobras - Vigilance Reservoir System - Brazil</b><br></br>
 							Monitoring reservoir production variables with graphics, integrated vision with other company systems. <br></br>
@@ -431,7 +431,7 @@ class Home extends Component {
 						  </label>
 						  </a>
 						</div>
-						<div className="ketcontent">
+						<div className="ketcontent job-position-hint">
 						  <p>
 						  	<b>Concrete Solutions - Brazil</b><br></br>
 							Americanas.com/Partnership: Developing Business JAVA EE Web solution for B2W company (http://www.b2wdigital.com/).
@@ -450,7 +450,7 @@ class Home extends Component {
 						  </label>
 						  </a>
 						</div>
-						<div className="ketcontent">
+						<div className="ketcontent education-hint">
 						  <p>
 						  	<b>Federal University of Rio de Janeiro - Brazil</b><br></br>
 						  	Subject: "CELLVOX: A mobile application for the vision disabled people"

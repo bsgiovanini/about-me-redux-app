@@ -157,6 +157,10 @@ ul.companies {
 	padding: 0 10px;
 }
 
+.list-inline .social-linkedin i {
+	color: #0077B5;
+}
+
 .list-inline .social-github i {
 	color: black;
 }
@@ -305,7 +309,7 @@ ul.companies {
 }
 
 .ketcircle .education-hint {
-	border-color: #f4ffaf;
+	border-color: #AA8039;
 }
 
 .ketcontent {
@@ -429,8 +433,16 @@ ul.companies {
 
   .ketcontent {
     padding-top: 45px;
-    border-color: #000;
   }
+
+   .job-position-hint {
+		border-color: #D46A6A;
+	}
+
+	.education-hint {
+		border-color: #AA8039;
+	}
+
   .ketcontent:before, .ketcontent:after {
     border: solid transparent;
     bottom: 100%;
