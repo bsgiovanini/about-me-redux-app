@@ -175,8 +175,6 @@ ul.companies {
 
 /*timeline*/
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
 /*Tooltip */
 .hint--top:before {
   margin-bottom: -30px;
@@ -240,7 +238,6 @@ ul.companies {
 /* ------------- KET Timeline ------------------------*/
  
 .ketmain{
-	font-family: 'Lato',Arial,sans-serif;
 	padding-left: 100px;
     padding-right: 100px;
 }
@@ -265,7 +262,7 @@ ul.companies {
 .ketdate {
     font-size: 14px;
 	font-weight:bold;
-    left: -175px;
+    left: -220px;
     position: absolute;
     top: 72%;
 }
@@ -285,7 +282,7 @@ ul.companies {
 	width: 70px;
 }
 .ketcircle img{
-	border: 5px solid #ececec;
+	border: 5px solid;
 	cursor:pointer;
 	border-radius: 50%;
 }
@@ -301,6 +298,14 @@ ul.companies {
 	-o-transition: 0.5s;
 	-ms-transition: 0.5s;
 	transition: 0.5s;
+}
+
+.ketcircle .job-position-hint {
+	border-color: #D46A6A;
+}
+
+.ketcircle .education-hint {
+	border-color: #f4ffaf;
 }
 
 .ketcontent {
@@ -372,7 +377,7 @@ ul.companies {
   background: #f98262;
 }
 .ketmain .ketradio:checked ~ .ketcontent {
-  max-height: 300px;
+  max-height: 350px;
   border-color: #000;
   background: #f4ffaf;
   margin-right: 25px;
@@ -381,7 +386,6 @@ ul.companies {
   transition: max-height 0.3s linear, border-color 0.5s linear, transform 0.2s linear;
 }
 .ketmain .ketradio:checked ~ .ketcontent p {
-  max-height: 200px;
   color: #000;
   transition: color 0.3s linear 0.3s;
 }

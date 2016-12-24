@@ -22,7 +22,7 @@ class Header extends Component {
 			      <ul className="nav navbar-nav">
 			        <li><a href="#about-me"><span className="glyphicon glyphicon-user" aria-hidden="true"></span><span className="hidden-sm">About Me</span></a></li>
 			        <li><a href="#skills"><span className="glyphicon glyphicon-book" aria-hidden="true"></span><span className="hidden-sm">Skills</span></a></li>
-			        <li><a href="#companies"><span className="glyphicon glyphicon-cd" aria-hidden="true"></span><span className="hidden-sm">Companies I Worked With</span></a></li>
+			        <li><a href="#history"><span className="glyphicon glyphicon-hdd" aria-hidden="true"></span><span className="hidden-sm">My History</span></a></li>
 			        {/*<li><a href="#"><span className="glyphicon glyphicon-education" aria-hidden="true"></span><span className="hidden-sm">My Education</span></a></li>
 			         <li><a href="#"><span className="glyphicon glyphicon-cloud" aria-hidden="true"></span><span className="hidden-sm">Projects</span></a></li>*/}
 			        <li><a href="http://www.linkedin.com/in/bsgiovanini" target="_blank"><span className="fa fa-linkedin-square fa-lg" aria-hidden="true"></span><span className="hidden-sm">Linkedin</span></a></li>

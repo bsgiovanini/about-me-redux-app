@@ -34,7 +34,7 @@ class Home extends Component {
             'Back End Development': {
                 'Javascript': {
                     'Express.js': '50.8',
-                    'Isomorphical': '50.0'
+                    'Node.js': '50.0'
                 },
                 'JVM':{
                 	'Groovy and Grails': '100',
@@ -49,15 +49,22 @@ class Home extends Component {
                 },
                 'DataBase': {
                 	'Oracle': '50',
-                	'Hibernate': '50'
+                },
+                'ORM': {
+                	'Hibernate': '30',
+                	'NHibernate': '30',
+                	'Gorm': '30'            
                 }
             },
             'Miscelaneous': {
-            	'Tools': {
+            	'Deploy': {
             		'Jenkins': '20',
             		'Docker': '20',
-            		'Git': '20',
             		'CDN': '20'
+            	},
+            	'Version Control': {
+            		'Git': '20',
+            		'SVN': '20'
             	}
             } 
         },
@@ -321,9 +328,9 @@ class Home extends Component {
 
   			</div>
 
-			<div id="companies" className="row">
+			<div id="history" className="row">
 				<div className="col-xs-12">
-  					<h1 className="section">Companies I have worked with</h1>
+  					<h1 className="section">My History</h1>
   				</div>
 
   				<div className="col-xs-12 ketmain">
@@ -333,17 +340,21 @@ class Home extends Component {
 					 <li className="timelineunit">
 						<input className="ketradio" id="unit8" name="units" type="radio" />
 						<div className="meta">
-						  <label className="title" htmlFor="unit8">This is our item number 3 in 2014.</label>
-						  <span className="ketdate">18 Jan 2014</span>
-						  <a href="#" className="hint--top" data-hint="Job Position">
+						  <label className="title" htmlFor="unit8">Full Stack Developer - Siplex System</label>
+						  <span className="ketdate">Dec 2015 - Now</span>
+						  <a href="#" className="job-position-hint hint--top" data-hint="Job Position - Petrobras">
 						  	<label className="ketcircle" htmlFor="unit8" >
-						  		<img src="petrobras.png"  />
+						  		<img src="petrobras.png" className="job-position-hint" />
 						    </label>
 						  </a>
 						</div>
 						<div className="ketcontent">
 						  <p>
-							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat. 
+						  	<b>Petrobras - Siplex System - Brazil</b><br></br>
+							Evaluation of oil and field exploration opportunities. <br></br>
+							Working as full stack developer, responsible for providing and supporting end-to-end web solutions (front and back-end) for geologistics requirements.
+							Technologies: Object Oriented Javascript (JQuery and Bootstrap) / HTML5 / CSS3 / Microsoft environment (.NET MVC5) / Typescript / Nhibernate / Oracle DB
+ 
 						  </p>
 						</div>
 					  </li>
@@ -351,17 +362,19 @@ class Home extends Component {
 					 <li className="timelineunit">
 						<input className="ketradio" id="unit7" name="units" type="radio"  />
 						<div className="meta">
-						  <label className="title" htmlFor="unit7">Click here to expand the content box.</label>
-						  <span className="ketdate">15 Jan 2014</span>
-						  <a href="#" className="hint--top" data-hint="Marya Maham">
-						  <label className="ketcircle" htmlFor="unit7">
-						  	<img src="face2.jpg"/>
+						  <label className="title" htmlFor="unit7">M.Sc in Defense Engineering - Robotics and Computational Intelligence</label>
+						  <span className="ketdate">Mar 2014 - Aug 2016</span>
+						  <a href="#" className="hint--top" data-hint="Education - IME">
+						  <label className="education-hint ketcircle" htmlFor="unit7">
+						  	<img src="ime.png" className="education-hint" />
 						  </label>
 						  </a>
 						</div>
 						<div className="ketcontent">
 						  <p>
-							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						  	<b>Military Engineering Institute - Brazil</b><br></br>
+						  	Subject: "A collision avoidance approach assisting remotely operated quadrotors"<br></br>
+						  	Publications: <br></br>
 						  </p>
 						</div>
 					  </li>
@@ -370,17 +383,18 @@ class Home extends Component {
 					  <li className="timelineunit">
 						<input className="ketradio" id="unit6" name="units" type="radio"  />
 						<div className="meta">
-						  <label className="title" htmlFor="unit6">You can also click on avatar to expand the content box.</label>
-						  <span className="ketdate">10 Jan 2014</span>
-						  <a href="#" className="hint--top" data-hint="Yellow Follower">
+						  <label className="title" htmlFor="unit6">Business Intelligence Specialist</label>
+						  <span className="ketdate">Jan 2009 - Dec 2010</span>
+						  <a href="#" className="hint--top education-hint" data-hint="Education - PUC">
 						  <label className="ketcircle" htmlFor="unit6">
-						  	<img src="face3.jpg" />
+						  	<img src="puc.png" className="education-hint"/>
 						  </label>
 						  </a>
 						</div>
 						<div className="ketcontent">
 						  <p>
-							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						     <b>Pontificial Catholic University - Brazil</b><br></br>
+							 Subject: "Genetic programming applied on reservoir history adjustment study"
 						  </p>
 						</div>
 					  </li>
@@ -388,17 +402,20 @@ class Home extends Component {
 					  <li className="timelineunit">
 						<input className="ketradio" id="unit5" name="units" type="radio"  />
 						<div className="meta">
-						  <label className="title" htmlFor="unit5">Mouse over the avatar to see effect and tooptip</label>
-						  <span className="ketdate">8 Jan 2014</span>
-						  <a href="#" className="hint--top" data-hint="Saparo">
+						  <label className="title" htmlFor="unit5">Full Stack Developer - Vigilance Reservoir System</label>
+						  <span className="ketdate">Jun 2008 - Dec 2015</span>
+						  <a href="#" className="hint--top job-position-hint" data-hint="Job Position - Petrobras">
 						  <label className="ketcircle" htmlFor="unit5">
-						  	<img src="face4.jpg"  />
+						  	<img src="petrobras.png"  className="job-position-hint" />
 						  </label>
 						  </a>
 						</div>
 						<div className="ketcontent">
 						  <p>
-							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						  	<b>Petrobras - Vigilance Reservoir System - Brazil</b><br></br>
+							Monitoring reservoir production variables with graphics, integrated vision with other company systems. <br></br>
+							Responsible for leading, architecting, providing and supporting solution with strong interface interaction (Javascript) to Reservoir Engineers.
+							Technologies: Object Oriented Javascript (Dojo Toolkit and JQuery) / CSS / Grails / Hibernate / Tomcat / PI Systems / Oracle DB
 						  </p>
 						</div>
 					  </li>
@@ -406,68 +423,37 @@ class Home extends Component {
 					  <li className="timelineunit">
 						<input className="ketradio" id="unit4" name="units" type="radio" />
 						<div className="meta">
-						  <label className="title" htmlFor="unit4">You can easily add more timeline.</label>
-						  <span className="ketdate">7 Jan 2014</span>
-						  <a href="#" className="hint--top" data-hint="Melissa">
+						  <label className="title" htmlFor="unit4">Back End Developer</label>
+						  <span className="ketdate">Jul 2007 - Jan 2008</span>
+						  <a href="#" className="hint--top job-position-hint" data-hint="Job Position - Concrete Solutions">
 						  <label className="ketcircle" htmlFor="unit4">
-						  	<img src="face5.jpg" />
+						  	<img src="cs.png" className="job-position-hint" />
 						  </label>
 						  </a>
 						</div>
 						<div className="ketcontent">
 						  <p>
-							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						  	<b>Concrete Solutions - Brazil</b><br></br>
+							Americanas.com/Partnership: Developing Business JAVA EE Web solution for B2W company (http://www.b2wdigital.com/).
+							Technologies: Javascript / HTML / CSS / Oracle Weblogic Portal Framework / Hibernate / Spring Framework
 						  </p>
 						</div>
 					  </li>
 					  <li className="timelineunit">
 						<input className="ketradio" id="unit3" name="units" type="radio" />
 						<div className="meta">
-						  <label className="title" htmlFor="unit3">Is this look awesome ??</label>
-						  <span className="ketdate">4 Jan 2014</span>
-						  <a href="#" className="hint--top" data-hint="White Folower">
+						  <label className="title" htmlFor="unit3">Bachelor in Computer Science</label>
+						  <span className="ketdate">May 2002 - Sep 2007</span>
+						  <a href="#" className="hint--top education-hint" data-hint="Education - UFRJ">
 						  <label className="ketcircle" htmlFor="unit3">
-						  	<img src="face6.jpg"  />
+						  	<img src="ufrj.png" className="education-hint" />
 						  </label>
 						  </a>
 						</div>
 						<div className="ketcontent">
 						  <p>
-							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
-						  </p>
-						</div>
-					  </li>
-					  <li className="timelineunit">
-						<input className="ketradio" id="unit2" name="units" type="radio" />
-						<div className="meta">
-						  <label className="title" htmlFor="unit2">Add timeline into your website to make it attractive look.</label>
-						  <span className="ketdate">3 Jan 2014</span>
-						  <a href="#" className="hint--top" data-hint="Friends">
-						  <label className="ketcircle" htmlFor="unit2">
-						  	<img src="face7.jpg"  />
-						  </label>
-						  </a>
-						</div>
-						<div className="ketcontent">
-						  <p>
-							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
-						  </p>
-						</div>
-					  </li>
-					  <li className="timelineunit">
-						<input className="ketradio" id="unit1" name="units" type="radio" />
-						<div className="meta">
-						  <label className="title" htmlFor="unit1">if you like it please don't forget to rate it.</label>
-						  <span className="ketdate">01 Jan 2014</span>
-						 <a href="#" className="hint--top" data-hint="Horse">   
-						 <label className="ketcircle" htmlFor="unit1">
-						  	<img src="face8.jpg" />
-						  </label>
-						 </a>  
-						</div>
-						<div className="ketcontent">
-						  <p>
-							Quisque sem turpis, rhoncus et ultricies ac, scelerisque molestie odio. Ut eget aliquam eros. Quisque magna felis, volutpat in ultricies eget, posuere eu neque. Quisque euismod semper laoreet. In tempor convallis feugiat. Nam tristique mauris in mattis placerat. Sed cursus, leo consequat adipiscing tempor, elit ligula ultrices nunc, vitae egestas massa tortor at erat.
+						  	<b>Federal University of Rio de Janeiro - Brazil</b><br></br>
+						  	Subject: "CELLVOX: A mobile application for the vision disabled people"
 						  </p>
 						</div>
 					  </li>
