@@ -13,11 +13,19 @@ body {
 .navbar {
 	font-size: .8em;
 	margin-bottom: 0px;
+	color: black;
 }
 
 .navbar .glyphicon, .navbar .fa {
 	margin-right: 7px;
 }
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #222;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
 
 .mainContent {	
 	background-color: white;
@@ -149,7 +157,7 @@ ul.companies {
 }
 
 .list-inline {
-	margin: 40px;
+	margin: 30px 20px;
 	text-align: center;
 }
 
