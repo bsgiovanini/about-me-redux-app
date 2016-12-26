@@ -38,7 +38,7 @@ class Home extends Component {
                 },
                 'JVM':{
                 	'Groovy and Grails': '100',
-                	'JAVA 5': '50'
+                	'JAVA': '50'
                 },
                 'C#': {
                 	'MVC5': '100',
