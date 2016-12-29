@@ -467,7 +467,7 @@ class Home extends Component {
 					<h1>Contact</h1>
 				</div>
 				<div className="col-xs-12">
-					<p className="contact-text">Contact me at <em>bsgiovanini(at)gmail.com</em> or call <em>+55 21 99727 2664</em></p>
+					<p className="contact-text">Contact me at <em>mr(at)brunogiovanini.com</em> or call <em>+55 21 99727 2664</em></p>
 				</div>
 			</div>
 
