@@ -26,6 +26,7 @@ class Header extends Component {
 			        {/*<li><a href="#"><span className="glyphicon glyphicon-education" aria-hidden="true"></span><span className="hidden-sm">My Education</span></a></li>
 			         <li><a href="#"><span className="glyphicon glyphicon-cloud" aria-hidden="true"></span><span className="hidden-sm">Projects</span></a></li>*/}
 			        <li><a href="http://www.linkedin.com/in/bsgiovanini" target="_blank"><span className="fa fa-linkedin-square fa-lg" aria-hidden="true"></span><span className="hidden-sm">Linkedin</span></a></li>
+			        <li><a href="https://www.medium.com/@bsgiovanini" target="_blank"><span className="fa fa-medium fa-lg" aria-hidden="true"></span><span className="hidden-sm">Medium</span></a></li>
 			        
 			      </ul>
 			      <ul className="nav navbar-nav navbar-right">
