@@ -1,12 +1,12 @@
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import * as actionCreators from './actions/layout';
+import * as actionCreators from './actions/home';
 
 import Main from './Main'
 
 function mapStateToProps(state) {
   return {
-    layout : state.layout
+    home : state.home
   };
 }
 

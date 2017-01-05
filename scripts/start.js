@@ -227,6 +227,11 @@ function runDevServer(host, port, protocol) {
   // Our custom middleware proxies requests to /index.html or a remote API.
   addMiddleware(devServer);
 
+  devServer.use(function (req, res, next) {
+    console.log('Ip:', req.connection.remoteAddress);
+    next();
+  });
+
   // Launch WebpackDevServer.
   devServer.listen(port, (err, result) => {
     if (err) {

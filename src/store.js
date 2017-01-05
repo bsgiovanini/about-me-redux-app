@@ -3,14 +3,15 @@ import createLogger from 'redux-logger';
 import {createStore, compose, applyMiddleware} from 'redux';
 import {syncHistoryWithStore} from 'react-router-redux';
 import {browserHistory} from 'react-router';
+import {fetchText} from './actions/home';
 
 import rootReducer from './reducers/index';
 
 
 const defaultState = {
 
-	layout:{
-		sidebarOpen: false
+	home:{
+		aboutmeText: ""
 	}
 };
 
@@ -27,6 +28,8 @@ const enhancers = compose(
 );
 
 const store = createStore(rootReducer, defaultState, enhancers);
+
+store.dispatch(fetchText());
 
 export const history = syncHistoryWithStore(browserHistory, store);
 
