@@ -43,8 +43,7 @@ class TimeLine extends React.Component {
 				<div className="ketcontent education-hint">
 				<p>
 				<b>Military Engineering Institute - Brazil</b><br></br>
-				Subject: "A collision avoidance approach assisting remotely operated quadrotors"<br></br>
-				Publications: <br></br>
+				Subject: "A collision avoidance approach assisting remotely operated quadrotors"				
 				</p>
 				</div>
 				</li>
