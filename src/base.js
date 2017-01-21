@@ -1,9 +1,9 @@
-import Rebase from 're-base';
+import Firebase from 'firebase';
 
-const base = Rebase.createClass({
+const app = Firebase.initializeApp({
 	apiKey: "AIzaSyBDCtUUQrOICCbwrqRcXZAqCSegpJxNaos",
     authDomain: "about-me-redux-app-bsg.firebaseapp.com",
     databaseURL: "https://about-me-redux-app-bsg.firebaseio.com"
 });
 
-export default base;
+export default app.database();

@@ -51,6 +51,7 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "classnames": "^2.2.5",
+    "firebase": "^3.6.4",
     "highcharts": "^5.0.6",
     "highcharts-heatmap": "^0.1.2",
     "highcharts-treemap": "^0.1.2",
