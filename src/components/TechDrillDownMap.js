@@ -9,11 +9,11 @@ class TechDrillDownMap extends React.Component {
 	getConfig () {
 		var data = {
 			'Front End Development': {
-				'Javascript': {
+				'JavaScript': {
 					'React.js': '49.3',
 					'Redux': '50.0',
 					'Dojo Toolkit': '50.1',
-					'Vanilla Javascript': '50.4',
+					'Vanilla JavaScript': '50.4',
 					'JQuery': '60.3',
 					'Highcharts': '45.3',
 					'Jasmine': '40'
@@ -30,7 +30,7 @@ class TechDrillDownMap extends React.Component {
 
 			},
 			'Back End Development': {
-				'Javascript': {
+				'JavaScript': {
 					'Express.js': '50.8',
 					'Node.js': '50.0'
 				},

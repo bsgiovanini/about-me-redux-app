@@ -19,9 +19,6 @@ class Banner extends Component {
 				<li className="social-facebook">
 					<a href="https://www.facebook.com/bsgiovanini" target="_blank"><i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
 				</li>
-				<li className="social-google-plus">
-					<a href="https://plus.google.com/bsgiovanini" target="_blank"><i className="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
-				</li>
 			</ul>
 
       	</footer>
