@@ -146,6 +146,25 @@ ul.companies {
 	display: inline;
 }
 
+.project {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.project a {
+  
+      text-decoration: none;
+      color: black;
+} 
+
+
+
+.project span {
+    padding: 30px 40px;
+} 
+
+
 .with-background {
 	background-image: url('./assets/fundo2.png');
 	background-repeat: repeat;
