@@ -11,7 +11,7 @@ class TimeLine extends React.Component {
 				<input className="ketradio" id="unit8" name="units" type="radio" />
 				<div className="meta">
 				<label className="title" htmlFor="unit8">Full Stack Developer - Siplex System</label>
-				<span className="ketdate">Dec 2015 - Now</span>
+				<span className="ketdate">Dec 2015 - Present</span>
 				<a href="#" className="job-position-hint hint--top" data-hint="Job Position - Petrobras">
 				<label className="ketcircle" htmlFor="unit8" >
 				<img alt="Siplex - Petrobras" src="petrobras.png" className="job-position-hint" />
